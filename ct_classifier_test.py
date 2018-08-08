@@ -17,7 +17,7 @@ from ct_classifier import RegistrationClassificationDataset
 from ct_classifier import Net
 
 torch.set_num_threads(35)
-test_dataset = RegistrationClassificationDataset(data_dir="/home/asinha8/sinusct/dicom", label_dir = "/home/asinha8/local/data", dataset_id=4)
+test_dataset = RegistrationClassificationDataset(data_dir="/home/asinha8/sinusct/dicom", label_dir = "/home/asinha8/local/data", dataset_id=8)
 testdataloader = DataLoader(test_dataset, batch_size=2, shuffle=True, num_workers=35)
 
 print('Finished setup')
